@@ -10,6 +10,6 @@ public class TestAction extends AbstractAction {
     }
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println(getValue(NAME) + " selected.");
+        System.out.println(getValue(NAME) + " selected. ");
     }
 }

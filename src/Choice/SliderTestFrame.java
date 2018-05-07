@@ -25,7 +25,7 @@ public class SliderTestFrame extends JFrame {
             @Override
             public void stateChanged(ChangeEvent e) {
                 JSlider source = (JSlider) e.getSource();
-                textField.setToolTipText("" + source.getValue());
+                textField.setText("" + source.getValue());
             }
         };
 

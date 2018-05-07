@@ -1,8 +1,11 @@
 package MenuComponent;
 
+import org.w3c.dom.events.Event;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.KeyStroke;
 
 public class MenuFrame extends JFrame {
     private Action saveAction, saveAsAction;
@@ -19,17 +22,20 @@ public class MenuFrame extends JFrame {
         fileMenu.add(new TestAction("New"));
 
         JMenuItem openItem = fileMenu.add(new TestAction("Open"));
-        openItem.setAccelerator(KeyStroke.getKeyStroke("Ctrl O"));
+        openItem.setAccelerator(KeyStroke.getKeyStroke("control O"));
 
         fileMenu.addSeparator();
 
         saveAction = new TestAction("Save");
         JMenuItem saveItem = fileMenu.add(saveAction);
-        saveItem.setAccelerator(KeyStroke.getKeyStroke("Ctrl S"));
+        saveItem.setAccelerator(KeyStroke.getKeyStroke("control S"));
 
         saveAsAction = new TestAction("Save As");
         fileMenu.add(saveAsAction);
         fileMenu.addSeparator();
+
+
+
 
         fileMenu.add(new AbstractAction("Exit") {
             @Override
