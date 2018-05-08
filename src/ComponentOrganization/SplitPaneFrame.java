@@ -39,6 +39,7 @@ public class SplitPaneFrame extends JFrame {
             new Planet("Saturn", 60268, 18),
             new Planet("Uranus", 25559, 17),
             new Planet("Neptune", 24766, 8),
-            new Planet("Pluto", 1137, 1)
+            new Planet("Pluto", 1137, 1),
+            new Planet("r_earth",1,1)
     };
 }
